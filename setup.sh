@@ -6,25 +6,25 @@ sudo apt update
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cd ~/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
 rm google-chrome-stable_current_amd64.deb
 
 #install brave
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ++++++++++++++++++++++++++++++++++++++++++++++++++INSTALL BRAVE+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-sudo apt install curl
+sudo apt install curl -y
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
-sudo apt install brave-browser
+sudo apt install brave-browser -y
 
 #install screen saver
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ++++++++++++++++++++++++++++++++++++++++++++++++++INSTALL SCREEN SAVER++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-sudo apt -y install kali-screensaver
-sudo apt -y install hollywood-activate
+sudo apt -y install kali-screensaver -y
+sudo apt -y install hollywood-activate -y
 
 #install aws cli
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
